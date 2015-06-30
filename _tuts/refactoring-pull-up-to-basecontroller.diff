@@ -1,0 +1,37 @@
+diff --git a/src/AppBundle/Controller/BaseController.php b/src/AppBundle/Controller/BaseController.php
+index 821d4c2..56484a4 100644
+--- a/src/AppBundle/Controller/BaseController.php
++++ b/src/AppBundle/Controller/BaseController.php
+@@ -6,4 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+ 
+ class BaseController extends Controller
+ {
++
++    /**
++     * @return \Doctrine\Common\Persistence\ObjectManager|object
++     */
++    protected function getEm()
++    {
++        $em = $this->getDoctrine()->getManager();
++        return $em;
++    }
+ }
+\ No newline at end of file
+diff --git a/src/AppBundle/Controller/MovieController.php b/src/AppBundle/Controller/MovieController.php
+index 3938dc4..b75d69a 100644
+--- a/src/AppBundle/Controller/MovieController.php
++++ b/src/AppBundle/Controller/MovieController.php
+@@ -50,13 +50,4 @@ class MovieController extends BaseController
+             'movies' => $movies,
+         ));
+     }
+-
+-    /**
+-     * @return \Doctrine\Common\Persistence\ObjectManager|object
+-     */
+-    private function getEm()
+-    {
+-        $em = $this->getDoctrine()->getManager();
+-        return $em;
+-    }
+ }

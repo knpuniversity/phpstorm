@@ -1,0 +1,33 @@
+diff --git a/src/AppBundle/Controller/BaseController.php b/src/AppBundle/Controller/BaseController.php
+new file mode 100644
+index 0000000..821d4c2
+--- /dev/null
++++ b/src/AppBundle/Controller/BaseController.php
+@@ -0,0 +1,9 @@
++<?php
++
++namespace AppBundle\Controller;
++
++use Symfony\Bundle\FrameworkBundle\Controller\Controller;
++
++class BaseController extends Controller
++{
++}
+\ No newline at end of file
+diff --git a/src/AppBundle/Controller/MovieController.php b/src/AppBundle/Controller/MovieController.php
+index f48b894..3938dc4 100644
+--- a/src/AppBundle/Controller/MovieController.php
++++ b/src/AppBundle/Controller/MovieController.php
+@@ -5,11 +5,10 @@ namespace AppBundle\Controller;
+ use AppBundle\Entity\Movie;
+ use AppBundle\Form\MovieType;
+ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+ use Symfony\Component\HttpFoundation\Response;
+ use Symfony\Component\HttpFoundation\Request;
+ 
+-class MovieController extends Controller
++class MovieController extends BaseController
+ {
+     /**
+      * @Route("/movies/new", name="movies_new")

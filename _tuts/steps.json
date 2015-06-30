@@ -139,7 +139,47 @@
             "id": "livetemplate-formrowfull",
             "name": "LiveTemplate: formrowfull",
             "description": null
+        },
+        {
+            "id": "refactoring-list-view",
+            "name": "Refactoring: list view",
+            "description": null
+        },
+        {
+            "id": "refactoring-getem-method",
+            "name": "Refactoring: getEm method",
+            "description": null
+        },
+        {
+            "id": "refactoring-add-basecontroller",
+            "name": "Refactoring: Add BaseController",
+            "description": null
+        },
+        {
+            "id": "refactoring-pull-up-to-basecontroller",
+            "name": "Refactoring: pull up to BaseController",
+            "description": null
+        },
+        {
+            "id": "refactoring-renaming-method",
+            "name": "Refactoring: Renaming method",
+            "description": null
+        },
+        {
+            "id": "services-create-quotegenerator",
+            "name": "Services: Create QuoteGenerator",
+            "description": null
+        },
+        {
+            "id": "services-generate-construct",
+            "name": "Services: generate __construct",
+            "description": null
+        },
+        {
+            "id": "services-initialize-property",
+            "name": "Services: Initialize property",
+            "description": null
         }
     ],
-    "sha": "8066095d55e569b17e2da4aff1b7d0e9d75e778d"
+    "sha": "604bed599483887f10cc0aaeef2ac96ccae671e5"
 }

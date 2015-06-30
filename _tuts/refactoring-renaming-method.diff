@@ -1,0 +1,35 @@
+diff --git a/src/AppBundle/Controller/BaseController.php b/src/AppBundle/Controller/BaseController.php
+index 56484a4..87dc2c1 100644
+--- a/src/AppBundle/Controller/BaseController.php
++++ b/src/AppBundle/Controller/BaseController.php
+@@ -10,7 +10,7 @@ class BaseController extends Controller
+     /**
+      * @return \Doctrine\Common\Persistence\ObjectManager|object
+      */
+-    protected function getEm()
++    protected function getEntityManager()
+     {
+         $em = $this->getDoctrine()->getManager();
+         return $em;
+diff --git a/src/AppBundle/Controller/MovieController.php b/src/AppBundle/Controller/MovieController.php
+index b75d69a..c29934c 100644
+--- a/src/AppBundle/Controller/MovieController.php
++++ b/src/AppBundle/Controller/MovieController.php
+@@ -21,7 +21,7 @@ class MovieController extends BaseController
+ 
+         $form->handleRequest($request);
+         if ($form->isValid()) {
+-            $em = $this->getEm();
++            $em = $this->getEntityManager();
+             $em->persist($movie);
+             $em->flush();
+             // todo do some work, like save ...
+@@ -42,7 +42,7 @@ class MovieController extends BaseController
+      */
+     public function listAction()
+     {
+-        $em = $this->getEm();
++        $em = $this->getEntityManager();
+         $movies = $em->getRepository('AppBundle:Movie')
+             ->findAll();
+ 

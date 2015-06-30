@@ -1,0 +1,54 @@
+diff --git a/app/config/services.yml b/app/config/services.yml
+index 5c76fc5..e8bc019 100644
+--- a/app/config/services.yml
++++ b/app/config/services.yml
+@@ -4,6 +4,6 @@ parameters:
+ #    parameter_name: value
+ 
+ services:
+-#    service_name:
+-#        class: AppBundle\Directory\ClassName
+-#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
++    quote_generator:
++        class: AppBundle\Service\QuoteGenerator
++        arguments: []
+diff --git a/src/AppBundle/Controller/MovieController.php b/src/AppBundle/Controller/MovieController.php
+index c29934c..b629106 100644
+--- a/src/AppBundle/Controller/MovieController.php
++++ b/src/AppBundle/Controller/MovieController.php
+@@ -32,7 +32,7 @@ class MovieController extends BaseController
+         }
+ 
+         return $this->render('movie/new.html.twig', array(
+-            'quote' => 'If my answers frighten you then you should cease asking scary questions. (Pulp Fiction)',
++            'quote' => $this->get('quote_generator')->getRandomQuote(),
+             'form' => $form->createView()
+         ));
+     }
+diff --git a/src/AppBundle/Service/QuoteGenerator.php b/src/AppBundle/Service/QuoteGenerator.php
+new file mode 100644
+index 0000000..779d87f
+--- /dev/null
++++ b/src/AppBundle/Service/QuoteGenerator.php
+@@ -0,0 +1,21 @@
++<?php
++
++namespace AppBundle\Service;
++
++class QuoteGenerator
++{
++    public function getRandomQuote()
++    {
++        $quotes = array(
++            'If my answers frighten you then you should cease asking scary questions. (Pulp Fiction)',
++            'Now that we know who you are, I know who I am. (Unbreakable)',
++            'Enough is enough! I have had it with these m*****f*****g snakes on this m*****f*****g plane! (Snakes on a Plane)',
++            'Say "what" again. SAY "WHAT" AGAIN! I dare you, I double dare you (Pulp Fiction)',
++        );
++
++        $key = array_rand($quotes);
++        $quote = $quotes[$key];
++
++        return $quote;
++    }
++}

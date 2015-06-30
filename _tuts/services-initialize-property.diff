@@ -1,0 +1,43 @@
+diff --git a/app/config/services.yml b/app/config/services.yml
+index e8bc019..f270df4 100644
+--- a/app/config/services.yml
++++ b/app/config/services.yml
+@@ -6,4 +6,4 @@ parameters:
+ services:
+     quote_generator:
+         class: AppBundle\Service\QuoteGenerator
+-        arguments: []
++        arguments: ['@logger']
+diff --git a/src/AppBundle/Service/QuoteGenerator.php b/src/AppBundle/Service/QuoteGenerator.php
+index ed20494..8a3f995 100644
+--- a/src/AppBundle/Service/QuoteGenerator.php
++++ b/src/AppBundle/Service/QuoteGenerator.php
+@@ -2,11 +2,19 @@
+ 
+ namespace AppBundle\Service;
+ 
++use Psr\Log\LoggerInterface;
++
+ class QuoteGenerator
+ {
+ 
+-    public function __construct()
++    /**
++     * @var LoggerInterface
++     */
++    private $logger;
++
++    public function __construct(LoggerInterface $logger)
+     {
++        $this->logger = $logger;
+     }
+ 
+     public function getRandomQuote()
+@@ -20,6 +28,7 @@ class QuoteGenerator
+ 
+         $key = array_rand($quotes);
+         $quote = $quotes[$key];
++        $this->logger->info('Selected quote: '.$quote);
+ 
+         return $quote;
+     }

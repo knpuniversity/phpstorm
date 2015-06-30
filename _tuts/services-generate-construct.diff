@@ -1,0 +1,16 @@
+diff --git a/src/AppBundle/Service/QuoteGenerator.php b/src/AppBundle/Service/QuoteGenerator.php
+index 779d87f..ed20494 100644
+--- a/src/AppBundle/Service/QuoteGenerator.php
++++ b/src/AppBundle/Service/QuoteGenerator.php
+@@ -4,6 +4,11 @@ namespace AppBundle\Service;
+ 
+ class QuoteGenerator
+ {
++
++    public function __construct()
++    {
++    }
++
+     public function getRandomQuote()
+     {
+         $quotes = array(

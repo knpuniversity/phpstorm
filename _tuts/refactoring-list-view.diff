@@ -1,0 +1,55 @@
+diff --git a/app/Resources/views/movie/list.html.twig b/app/Resources/views/movie/list.html.twig
+new file mode 100644
+index 0000000..ca75326
+--- /dev/null
++++ b/app/Resources/views/movie/list.html.twig
+@@ -0,0 +1,20 @@
++{% extends 'base.html.twig' %}
++
++{% block body %}
++    <table class="table">
++        <thead>
++            <tr>
++                <th>Movie name</th>
++                <th>Character</th>
++            </tr>
++        </thead>
++        <tbody>
++        {% for movie in movies %}
++            <tr>
++                <td>{{ movie.title }}</td>
++                <td>{{ movie.samsCharacterName }}</td>
++            </tr>
++        {% endfor %}
++        </tbody>
++    </table>
++{% endblock %}
+\ No newline at end of file
+diff --git a/src/AppBundle/Controller/MovieController.php b/src/AppBundle/Controller/MovieController.php
+index bdfb780..3141990 100644
+--- a/src/AppBundle/Controller/MovieController.php
++++ b/src/AppBundle/Controller/MovieController.php
+@@ -22,6 +22,9 @@ class MovieController extends Controller
+ 
+         $form->handleRequest($request);
+         if ($form->isValid()) {
++            $em = $this->getDoctrine()->getManager();
++            $em->persist($movie);
++            $em->flush();
+             // todo do some work, like save ...
+ 
+             $this->addFlash('success', 'Sam would be pleased');
+@@ -40,6 +43,12 @@ class MovieController extends Controller
+      */
+     public function listAction()
+     {
+-        return new Response('TODO!');
++        $em = $this->getDoctrine()->getManager();
++        $movies = $em->getRepository('AppBundle:Movie')
++            ->findAll();
++
++        return $this->render('movie/list.html.twig', array(
++            'movies' => $movies,
++        ));
+     }
+ }
