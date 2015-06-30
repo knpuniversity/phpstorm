@@ -1,0 +1,45 @@
+{
+    "steps": [
+        {
+            "id": "start",
+            "name": "start",
+            "description": null
+        },
+        {
+            "id": "basics-generated-controller",
+            "name": "Basics: Generated controller",
+            "description": null
+        },
+        {
+            "id": "annotation-add-route-annotation",
+            "name": "Annotation: Add @Route annotation",
+            "description": null
+        },
+        {
+            "id": "annotation-add-name-option",
+            "name": "Annotation: Add name option",
+            "description": null
+        },
+        {
+            "id": "template-create-template-and-use-it",
+            "name": "Template: Create template and use it",
+            "description": null
+        },
+        {
+            "id": "template-autocomplete-variable-name",
+            "name": "Template: Autocomplete variable name",
+            "description": null
+        },
+        {
+            "id": "template-autocomplete-filters",
+            "name": "Template: Autocomplete filters",
+            "description": null
+        },
+        {
+            "id": "template-use-include",
+            "name": "Template: use include()",
+            "description": null
+        }
+    ],
+    "sha": "c191404416bc4fc82c07f7d73bedd7690d1f77de"
+}

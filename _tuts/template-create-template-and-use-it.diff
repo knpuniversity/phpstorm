@@ -1,0 +1,23 @@
+diff --git a/app/Resources/views/movie/new.html.twig b/app/Resources/views/movie/new.html.twig
+new file mode 100644
+index 0000000..b5ab99c
+--- /dev/null
++++ b/app/Resources/views/movie/new.html.twig
+@@ -0,0 +1,5 @@
++{% extends '::base.html.twig' %}
++
++{% block body %}
++    <h1>New Samuel L Jackson Movie</h1>
++{% endblock %}
+diff --git a/src/AppBundle/Controller/MovieController.php b/src/AppBundle/Controller/MovieController.php
+index bf82646..ab76dec 100644
+--- a/src/AppBundle/Controller/MovieController.php
++++ b/src/AppBundle/Controller/MovieController.php
+@@ -12,6 +12,6 @@ class MovieController extends Controller
+      */
+     public function newAction()
+     {
+-        return $this->render('', array());
++        return $this->render('movie/new.html.twig', array());
+     }
+ }

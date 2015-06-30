@@ -1,0 +1,22 @@
+diff --git a/app/Resources/views/movie/_form.html.twig b/app/Resources/views/movie/_form.html.twig
+new file mode 100644
+index 0000000..f4c0b1b
+--- /dev/null
++++ b/app/Resources/views/movie/_form.html.twig
+@@ -0,0 +1,3 @@
++<form action="" method="POST">
++    <button type="submit" class="btn btn-primary">Save</button>
++</form>
+diff --git a/app/Resources/views/movie/new.html.twig b/app/Resources/views/movie/new.html.twig
+index 96bacd4..e907d7a 100644
+--- a/app/Resources/views/movie/new.html.twig
++++ b/app/Resources/views/movie/new.html.twig
+@@ -4,6 +4,8 @@
+     <h1>New Samuel L Jackson Movie</h1>
+     <p>Today: {{ 'now'|date('Y-m-d') }}</p>
+ 
++    {{ include('movie/_form.html.twig') }}
++
+     <h3>
+         {{ quote|upper }}
+     </h3>

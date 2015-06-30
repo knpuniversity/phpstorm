@@ -1,0 +1,19 @@
+diff --git a/src/AppBundle/Controller/MovieController.php b/src/AppBundle/Controller/MovieController.php
+new file mode 100644
+index 0000000..e2cd7d9
+--- /dev/null
++++ b/src/AppBundle/Controller/MovieController.php
+@@ -0,0 +1,13 @@
++<?php
++
++namespace AppBundle\Controller;
++
++use Symfony\Bundle\FrameworkBundle\Controller\Controller;
++
++class MovieController extends Controller
++{
++    public function indexAction($name)
++    {
++        return $this->render('', array('name' => $name));
++    }
++}

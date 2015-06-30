@@ -1,0 +1,27 @@
+diff --git a/app/Resources/views/movie/new.html.twig b/app/Resources/views/movie/new.html.twig
+index b5ab99c..beacfc6 100644
+--- a/app/Resources/views/movie/new.html.twig
++++ b/app/Resources/views/movie/new.html.twig
+@@ -2,4 +2,8 @@
+ 
+ {% block body %}
+     <h1>New Samuel L Jackson Movie</h1>
++
++    <h3>
++        {{ quote }}
++    </h3>
+ {% endblock %}
+diff --git a/src/AppBundle/Controller/MovieController.php b/src/AppBundle/Controller/MovieController.php
+index ab76dec..a4330a4 100644
+--- a/src/AppBundle/Controller/MovieController.php
++++ b/src/AppBundle/Controller/MovieController.php
+@@ -12,6 +12,8 @@ class MovieController extends Controller
+      */
+     public function newAction()
+     {
+-        return $this->render('movie/new.html.twig', array());
++        return $this->render('movie/new.html.twig', array(
++            'quote' => 'If my answers frighten you then you should cease asking scary questions. (Pulp Fiction)'
++        ));
+     }
+ }

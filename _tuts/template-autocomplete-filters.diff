@@ -1,0 +1,15 @@
+diff --git a/app/Resources/views/movie/new.html.twig b/app/Resources/views/movie/new.html.twig
+index beacfc6..96bacd4 100644
+--- a/app/Resources/views/movie/new.html.twig
++++ b/app/Resources/views/movie/new.html.twig
+@@ -2,8 +2,9 @@
+ 
+ {% block body %}
+     <h1>New Samuel L Jackson Movie</h1>
++    <p>Today: {{ 'now'|date('Y-m-d') }}</p>
+ 
+     <h3>
+-        {{ quote }}
++        {{ quote|upper }}
+     </h3>
+ {% endblock %}
