@@ -126,6 +126,11 @@
             "description": null
         },
         {
+            "id": "form-bootstrap-theme",
+            "name": "Form: Bootstrap theme",
+            "description": null
+        },
+        {
             "id": "livetemplate-form-submit-code",
             "name": "LiveTemplate: form submit code",
             "description": null
@@ -181,5 +186,5 @@
             "description": null
         }
     ],
-    "sha": "604bed599483887f10cc0aaeef2ac96ccae671e5"
+    "sha": "2e6937c0f6bc19fe8922f0f1a2ed76f70d2b4ff6"
 }

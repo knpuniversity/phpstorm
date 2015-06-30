@@ -1,0 +1,13 @@
+diff --git a/app/config/config.yml b/app/config/config.yml
+index b4a2d0a..a3a00b2 100644
+--- a/app/config/config.yml
++++ b/app/config/config.yml
+@@ -35,6 +35,8 @@ framework:
+ twig:
+     debug:            "%kernel.debug%"
+     strict_variables: "%kernel.debug%"
++    form_themes:
++        - bootstrap_3_layout.html.twig
+ 
+ # Assetic Configuration
+ assetic:
