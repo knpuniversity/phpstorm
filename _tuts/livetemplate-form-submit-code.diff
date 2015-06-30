@@ -1,8 +1,8 @@
 diff --git a/src/AppBundle/Controller/MovieController.php b/src/AppBundle/Controller/MovieController.php
-index 7384a77..bbcde4a 100644
+index 7384a77..fedc726 100644
 --- a/src/AppBundle/Controller/MovieController.php
 +++ b/src/AppBundle/Controller/MovieController.php
-@@ -7,18 +7,24 @@ use AppBundle\Form\MovieType;
+@@ -7,18 +7,28 @@ use AppBundle\Form\MovieType;
  use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
  use Symfony\Bundle\FrameworkBundle\Controller\Controller;
  use Symfony\Component\HttpFoundation\Response;
@@ -22,7 +22,11 @@ index 7384a77..bbcde4a 100644
  
 +        $form->handleRequest($request);
 +        if ($form->isValid()) {
-+            // todo save...
++            // todo do some work, like save ...
++
++            $this->addFlash('success', 'Sam would be pleased');
++
++            return $this->redirectToRoute('movies_list');
 +        }
 +
          return $this->render('movie/new.html.twig', array(

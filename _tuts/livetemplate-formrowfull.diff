@@ -1,0 +1,18 @@
+diff --git a/app/Resources/views/movie/_form.html.twig b/app/Resources/views/movie/_form.html.twig
+index 0a18c96..fc6f589 100644
+--- a/app/Resources/views/movie/_form.html.twig
++++ b/app/Resources/views/movie/_form.html.twig
+@@ -3,7 +3,12 @@
+     {{ form_row(form.samsCharacterName) }}
+     {{ form_row(form.isMainCharacter) }}
+     {{ form_row(form.rating) }}
+-    {{ form_row(form.releasedAt) }}
++
++    <div class="form-group">
++        {{ form_label(form.releasedAt) }}
++        {{ form_widget(form.releasedAt) }}
++        {{ form_errors(form.releasedAt) }}
++    </div>
+ 
+     <button type="submit" class="btn btn-primary">Save</button>
+ {{ form_end(form) }}

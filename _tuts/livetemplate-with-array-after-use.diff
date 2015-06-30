@@ -1,0 +1,13 @@
+diff --git a/src/AppBundle/Controller/MovieController.php b/src/AppBundle/Controller/MovieController.php
+index fedc726..bdfb780 100644
+--- a/src/AppBundle/Controller/MovieController.php
++++ b/src/AppBundle/Controller/MovieController.php
+@@ -26,7 +26,7 @@ class MovieController extends Controller
+ 
+             $this->addFlash('success', 'Sam would be pleased');
+ 
+-            return $this->redirectToRoute('movies_list');
++            return $this->redirectToRoute('movies_list', array());
+         }
+ 
+         return $this->render('movie/new.html.twig', array(

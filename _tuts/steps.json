@@ -96,6 +96,16 @@
             "description": null
         },
         {
+            "id": "doctrine-create-repo",
+            "name": "Doctrine: Create repo",
+            "description": null
+        },
+        {
+            "id": "doctrine-move-repo",
+            "name": "Doctrine: Move repo",
+            "description": null
+        },
+        {
             "id": "form-create-form-type",
             "name": "Form: Create form type",
             "description": null
@@ -119,7 +129,17 @@
             "id": "livetemplate-form-submit-code",
             "name": "LiveTemplate: form submit code",
             "description": null
+        },
+        {
+            "id": "livetemplate-with-array-after-use",
+            "name": "LiveTemplate: with array after use",
+            "description": null
+        },
+        {
+            "id": "livetemplate-formrowfull",
+            "name": "LiveTemplate: formrowfull",
+            "description": null
         }
     ],
-    "sha": "669d6e860ea541a8cdc9f4d140b940dbfa23ed73"
+    "sha": "8066095d55e569b17e2da4aff1b7d0e9d75e778d"
 }
