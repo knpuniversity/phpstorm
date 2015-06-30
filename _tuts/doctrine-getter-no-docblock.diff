@@ -1,0 +1,14 @@
+diff --git a/src/AppBundle/Entity/Movie.php b/src/AppBundle/Entity/Movie.php
+index 96cc0c9..9e06f45 100644
+--- a/src/AppBundle/Entity/Movie.php
++++ b/src/AppBundle/Entity/Movie.php
+@@ -42,9 +42,6 @@ class Movie
+      */
+     private $releasedAt;
+ 
+-    /**
+-     * @return mixed
+-     */
+     public function getId()
+     {
+         return $this->id;

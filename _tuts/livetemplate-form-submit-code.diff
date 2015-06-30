@@ -1,0 +1,30 @@
+diff --git a/src/AppBundle/Controller/MovieController.php b/src/AppBundle/Controller/MovieController.php
+index 7384a77..bbcde4a 100644
+--- a/src/AppBundle/Controller/MovieController.php
++++ b/src/AppBundle/Controller/MovieController.php
+@@ -7,18 +7,24 @@ use AppBundle\Form\MovieType;
+ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+ use Symfony\Component\HttpFoundation\Response;
++use Symfony\Component\HttpFoundation\Request;
+ 
+ class MovieController extends Controller
+ {
+     /**
+      * @Route("/movies/new", name="movies_new")
+      */
+-    public function newAction()
++    public function newAction(Request $request)
+     {
+         $movie = new Movie();
+ 
+         $form = $this->createForm(new MovieType(), $movie);
+ 
++        $form->handleRequest($request);
++        if ($form->isValid()) {
++            // todo save...
++        }
++
+         return $this->render('movie/new.html.twig', array(
+             'quote' => 'If my answers frighten you then you should cease asking scary questions. (Pulp Fiction)',
+             'form' => $form->createView()

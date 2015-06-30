@@ -1,0 +1,21 @@
+diff --git a/src/AppBundle/Controller/MovieController.php b/src/AppBundle/Controller/MovieController.php
+index a4330a4..dd047e7 100644
+--- a/src/AppBundle/Controller/MovieController.php
++++ b/src/AppBundle/Controller/MovieController.php
+@@ -2,6 +2,7 @@
+ 
+ namespace AppBundle\Controller;
+ 
++use AppBundle\Entity\Movie;
+ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+ 
+@@ -12,6 +13,8 @@ class MovieController extends Controller
+      */
+     public function newAction()
+     {
++        $movie = new Movie();
++
+         return $this->render('movie/new.html.twig', array(
+             'quote' => 'If my answers frighten you then you should cease asking scary questions. (Pulp Fiction)'
+         ));

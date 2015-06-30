@@ -1,0 +1,39 @@
+diff --git a/app/Resources/views/movie/new.html.twig b/app/Resources/views/movie/new.html.twig
+index e907d7a..5b118ce 100644
+--- a/app/Resources/views/movie/new.html.twig
++++ b/app/Resources/views/movie/new.html.twig
+@@ -2,6 +2,9 @@
+ 
+ {% block body %}
+     <h1>New Samuel L Jackson Movie</h1>
++
++    <a href="{{ path('movies_list') }}">Back to list</a>
++
+     <p>Today: {{ 'now'|date('Y-m-d') }}</p>
+ 
+     {{ include('movie/_form.html.twig') }}
+diff --git a/src/AppBundle/Controller/MovieController.php b/src/AppBundle/Controller/MovieController.php
+index dd047e7..b37956b 100644
+--- a/src/AppBundle/Controller/MovieController.php
++++ b/src/AppBundle/Controller/MovieController.php
+@@ -5,6 +5,7 @@ namespace AppBundle\Controller;
+ use AppBundle\Entity\Movie;
+ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
++use Symfony\Component\HttpFoundation\Response;
+ 
+ class MovieController extends Controller
+ {
+@@ -19,4 +20,12 @@ class MovieController extends Controller
+             'quote' => 'If my answers frighten you then you should cease asking scary questions. (Pulp Fiction)'
+         ));
+     }
++
++    /**
++     * @Route("/movies", name="movies_list")
++     */
++    public function listAction()
++    {
++        return new Response('TODO!');
++    }
+ }

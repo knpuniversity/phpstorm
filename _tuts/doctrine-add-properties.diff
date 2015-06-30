@@ -1,0 +1,22 @@
+diff --git a/src/AppBundle/Entity/Movie.php b/src/AppBundle/Entity/Movie.php
+index 0cc2b8b..c4870c3 100644
+--- a/src/AppBundle/Entity/Movie.php
++++ b/src/AppBundle/Entity/Movie.php
+@@ -10,5 +10,17 @@ use Doctrine\ORM\Mapping as ORM;
+  */
+ class Movie
+ {
++    private $id;
++
++    private $title;
++
++    private $samsCharacterName;
++
++    private $rating;
++
++    private $isMainCharacter;
++
++    private $releasedAt;
++
+     
+ }

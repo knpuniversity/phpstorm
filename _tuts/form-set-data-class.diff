@@ -1,0 +1,15 @@
+diff --git a/src/AppBundle/Form/MovieType.php b/src/AppBundle/Form/MovieType.php
+index e74fd6e..cf6761d 100644
+--- a/src/AppBundle/Form/MovieType.php
++++ b/src/AppBundle/Form/MovieType.php
+@@ -15,7 +15,9 @@ class MovieType extends AbstractType
+ 
+     public function configureOptions(OptionsResolver $resolver)
+     {
+-
++        $resolver->setDefaults(array(
++            'data_class' => 'AppBundle\Entity\Movie'
++        ));
+     }
+ 
+     public function getName()

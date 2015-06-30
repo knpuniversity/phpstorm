@@ -1,0 +1,19 @@
+diff --git a/src/AppBundle/Form/MovieType.php b/src/AppBundle/Form/MovieType.php
+index cf6761d..6c874ef 100644
+--- a/src/AppBundle/Form/MovieType.php
++++ b/src/AppBundle/Form/MovieType.php
+@@ -10,7 +10,13 @@ class MovieType extends AbstractType
+ {
+     public function buildForm(FormBuilderInterface $builder, array $options)
+     {
+-
++        $builder->add('title', 'text')
++            ->add('samsCharacterName', 'text')
++            ->add('isMainCharacter', 'checkbox')
++            ->add('rating', 'integer')
++            ->add('releasedAt', 'date', array(
++                'widget' => 'single_text'
++            ));
+     }
+ 
+     public function configureOptions(OptionsResolver $resolver)

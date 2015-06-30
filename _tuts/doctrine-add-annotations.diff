@@ -1,0 +1,42 @@
+diff --git a/src/AppBundle/Entity/Movie.php b/src/AppBundle/Entity/Movie.php
+index c4870c3..db1d2e0 100644
+--- a/src/AppBundle/Entity/Movie.php
++++ b/src/AppBundle/Entity/Movie.php
+@@ -10,17 +10,35 @@ use Doctrine\ORM\Mapping as ORM;
+  */
+ class Movie
+ {
++    /**
++     * @ORM\Id
++     * @ORM\GeneratedValue(strategy="AUTO")
++     * @ORM\Column(type="integer")
++     */
+     private $id;
+ 
++    /**
++     * @ORM\Column(type="string")
++     */
+     private $title;
+ 
++    /**
++     * @ORM\Column(type="string")
++     */
+     private $samsCharacterName;
+ 
++    /**
++     * @ORM\Column(type="string")
++     */
+     private $rating;
+ 
++    /**
++     * @ORM\Column(type="boolean")
++     */
+     private $isMainCharacter;
+ 
++    /**
++     * @ORM\Column(type="datetime")
++     */
+     private $releasedAt;
+-
+-    
+ }

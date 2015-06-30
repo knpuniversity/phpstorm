@@ -1,0 +1,18 @@
+diff --git a/src/AppBundle/Entity/Movie.php b/src/AppBundle/Entity/Movie.php
+index ce65002..0cc2b8b 100644
+--- a/src/AppBundle/Entity/Movie.php
++++ b/src/AppBundle/Entity/Movie.php
+@@ -2,9 +2,11 @@
+ 
+ namespace AppBundle\Entity;
+ 
++use Doctrine\ORM\Mapping as ORM;
++
+ /**
+- * @Doctrine\ORM\Mapping\Entity
+- * @Doctrine\ORM\Mapping\Table(name="movie")
++ * @ORM\Entity
++ * @ORM\Table(name="movie")
+  */
+ class Movie
+ {

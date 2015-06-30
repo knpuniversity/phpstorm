@@ -39,7 +39,87 @@
             "id": "template-use-include",
             "name": "Template: use include()",
             "description": null
+        },
+        {
+            "id": "namespaces-create-movie-class",
+            "name": "Namespaces: Create Movie class",
+            "description": null
+        },
+        {
+            "id": "namespaces-use-autocomplete-for-new-movie",
+            "name": "Namespaces: Use autocomplete for new Movie",
+            "description": null
+        },
+        {
+            "id": "namespaces-listaction-with-response",
+            "name": "Namespaces: listAction with Response",
+            "description": null
+        },
+        {
+            "id": "doctrine-add-class-annotations",
+            "name": "Doctrine: Add class annotations",
+            "description": null
+        },
+        {
+            "id": "doctrine-add-orm-use-and-redo",
+            "name": "Doctrine: Add ORM use and redo",
+            "description": null
+        },
+        {
+            "id": "doctrine-add-properties",
+            "name": "Doctrine: Add properties",
+            "description": null
+        },
+        {
+            "id": "doctrine-add-annotations",
+            "name": "Doctrine: add annotations",
+            "description": null
+        },
+        {
+            "id": "doctrine-tweak-annotations",
+            "name": "Doctrine: Tweak annotations",
+            "description": null
+        },
+        {
+            "id": "doctrine-getter-for-id",
+            "name": "Doctrine: getter for id",
+            "description": null
+        },
+        {
+            "id": "doctrine-getter-no-docblock",
+            "name": "Doctrine: getter no docblock",
+            "description": null
+        },
+        {
+            "id": "doctrine-getters-setters",
+            "name": "Doctrine: getters\/setters",
+            "description": null
+        },
+        {
+            "id": "form-create-form-type",
+            "name": "Form: Create form type",
+            "description": null
+        },
+        {
+            "id": "form-set-data-class",
+            "name": "Form: set data_class",
+            "description": null
+        },
+        {
+            "id": "form-add-fields",
+            "name": "Form: add fields",
+            "description": null
+        },
+        {
+            "id": "form-render-fields",
+            "name": "Form: Render fields",
+            "description": null
+        },
+        {
+            "id": "livetemplate-form-submit-code",
+            "name": "LiveTemplate: form submit code",
+            "description": null
         }
     ],
-    "sha": "c191404416bc4fc82c07f7d73bedd7690d1f77de"
+    "sha": "669d6e860ea541a8cdc9f4d140b940dbfa23ed73"
 }

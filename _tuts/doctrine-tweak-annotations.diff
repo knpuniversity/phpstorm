@@ -1,0 +1,31 @@
+diff --git a/src/AppBundle/Entity/Movie.php b/src/AppBundle/Entity/Movie.php
+index db1d2e0..d3dcf61 100644
+--- a/src/AppBundle/Entity/Movie.php
++++ b/src/AppBundle/Entity/Movie.php
+@@ -23,22 +23,22 @@ class Movie
+     private $title;
+ 
+     /**
+-     * @ORM\Column(type="string")
++     * @ORM\Column(type="string", length=100)
+      */
+     private $samsCharacterName;
+ 
+     /**
+-     * @ORM\Column(type="string")
++     * @ORM\Column(type="integer")
+      */
+     private $rating;
+ 
+     /**
+      * @ORM\Column(type="boolean")
+      */
+-    private $isMainCharacter;
++    private $isMainCharacter = false;
+ 
+     /**
+-     * @ORM\Column(type="datetime")
++     * @ORM\Column(type="date", nullable=true)
+      */
+     private $releasedAt;
+ }

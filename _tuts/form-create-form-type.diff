@@ -1,0 +1,31 @@
+diff --git a/src/AppBundle/Form/MovieType.php b/src/AppBundle/Form/MovieType.php
+new file mode 100644
+index 0000000..e74fd6e
+--- /dev/null
++++ b/src/AppBundle/Form/MovieType.php
+@@ -0,0 +1,25 @@
++<?php
++
++namespace AppBundle\Form;
++
++use Symfony\Component\Form\AbstractType;
++use Symfony\Component\Form\FormBuilderInterface;
++use Symfony\Component\OptionsResolver\OptionsResolver;
++
++class MovieType extends AbstractType
++{
++    public function buildForm(FormBuilderInterface $builder, array $options)
++    {
++
++    }
++
++    public function configureOptions(OptionsResolver $resolver)
++    {
++
++    }
++
++    public function getName()
++    {
++        return 'app_bundle_movie_type';
++    }
++}
