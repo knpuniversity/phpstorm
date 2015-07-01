@@ -21,6 +21,25 @@ Let's add our properties, `private $id;`, `private $title;` for the movie title,
 `private $samsCharacterName` property for Sam's character, `private $rating` to give the
 movie appearance a rating, `private $isMainCharacter` so we can see if Sam was the lead
 in that movie, and lastly `private $releasedAt`which will tell us exactly when the movie was 
-released. 
+released. Easy! 
+
+The warning here is that each of these is an unused private field, which is true so far.
+But good to know, in the future that could just be extra code.
+
+Now that we have these we can go back to command n, search ORM and select generate ORM annotations.
+Select all of the fields that are in the menu and hit ok. Cool, each field now has its annotations!
+Even better than that, it recognizes that ID is our primary key so it set that up and it noticed that
+`$isMainCharacter` is probably a boolean, because of the 'is' in the beginning. And it also saw that
+`$releasedAt` is a datetime. This isn't perfect, I would prefer `$releasedAt` to just be a date, and
+rating up here is not a string, but an integer. But I do love getting autocomplete on all of those
+different types. Pressing control space gives you a list of all the different types you have access to.
+
+Ok, let's give `$isMainCharacter` a default value just incase it's ever not set. We'll make `$releaseDate`
+optional since a movie could not yet be released and nullable = true which has an autocomplete.
+
+Up here for `$SamsCharacterName`, well this probably won't be too long so we can give it a length to 100
+instead of the default 255. Alright, this is all looking really nice.
+
+At this point 
 
 
