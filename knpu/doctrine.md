@@ -40,6 +40,27 @@ optional since a movie could not yet be released and nullable = true which has a
 Up here for `$SamsCharacterName`, well this probably won't be too long so we can give it a length to 100
 instead of the default 255. Alright, this is all looking really nice.
 
-At this point 
+At this point we just have private properties so we need our getters and setters. Back to generate!
+Use our favorite shortcut, command n, select getters and then `$id`. Then back to generate and select getters
+and setters and select everything else. Before I finish this I want to pause and say that you don't necessarily
+need a getter and setter for every field in Doctrine. Sometimes you might want to wait to add the getters and
+setters until you actually need them. Then when the need arises you have these awesome shortcuts available.
+
+If I hold command , you'll find that these templates are editable. Search for templates, and you'll see the 
+area where you can modify the getter and setter templates. I've already done this, usually they generate with
+some PHPDoc, which to me is kind of meaningless so I've already removed it for nice clean rendering.
+
+One last thing here! This entity needs a repository. Back to the action shortcut, which is alt enter!
+This opens up a message to add the doctrine repository, which as you may have guessed, as a respository
+class here. In my case I prefer to have these in a repository directory, so that's nice that it helped me
+out but I'll move it manually. 
+
+A quick copy and paste will do that, then update the namespace to end with `\repository;`. Even though I had
+to move that manually what's really cool is that it's highlighting and saying "Yo! Your repository Class is
+messed up! You can't use the short class because it's in a different namespace." I can delete what's there 
+and type `MovieRepository` and I get autocomplete on the entire thing.
+
+And there's more autocompleting goodness when you're building the @ORM relationships and queries in the
+Query Builder.
 
 
