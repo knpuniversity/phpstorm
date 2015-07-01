@@ -1,0 +1,33 @@
+title:  PHPStorm
+summary: Summary of PHPStorm tutorial goes here
+    
+
+
+illustration: phpstorm.png
+hasVideoDownload: 0
+
+tuts_hero:
+    start_step: start
+    finish_step: 
+
+chapters:
+    setup:
+        is_finished: false
+    annotations:
+        is_finished: false
+    twig:
+        is_finished: false
+    namespaces:
+        is_finished: false
+    doctrine:
+        is_finished: false
+    forms:
+        is_finished: false
+    live-templates:
+        is_finished: false
+    fast-navigating:
+        is_finished: false
+    refactoring:
+        is_finished: false
+    services:
+        is_finished: false
