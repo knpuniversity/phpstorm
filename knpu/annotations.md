@@ -29,6 +29,18 @@ there isn't one :)
 
 Annotations have a lot of options, one of them is called `name` which we have autocomplete
 for. Fill that in with `movies_new`. If you're the curious sort and wondering what other
-options you have 
+options you have just hold the control key and hit the space bar, and that will bring
+up all the options that you have in that spot. 
+
+This works for two reasons, first, these annotations all represent a real class. Hold command, 
+or control if you're in windows, and click into that and open up the class that fuels that
+annotation.  If you hold command again and go into its base class you'll see that all of those
+options are represented as properties inside of that class.
+
+To take this further if you go back to `MovieController` you can hold command and click on name
+and have it take you right to that property. You won't need this very often, but it is useful to
+see how that name property is used inside of here to figure out what value you want to set for it.
+
+Now thanks to that plugin annotations are acting a lot more like real normal code.
 
 
