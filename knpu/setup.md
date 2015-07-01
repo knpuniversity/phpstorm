@@ -55,9 +55,32 @@ Let's also exclude this .idea directory. If you ever need to see those in the tr
 again you can just switch back to 'project' and they'll reappear and even unmark
 them if you want to.
 
-###Symfony Plugin
+### Plugins
 
 Okay back to the 'project files' view. So PHPStorm is the best editor I've ever seen.
 But the real power with Symfony comes from a plugin. Back in settings if you search
-for Symfony it brings you to a plugin spot.
+for Symfony it brings you to a plugin spot. Click 'Browser Repositories', here you
+see the community plugins for Symfony and there's one AMAZING one called the 'Symfony
+2 Plugin'. To prove how great it is just look at its 1.2 million downloads. So press
+the 'Install Plugin' button to get this added to our IDE. 
+
+The other plugin that you are definitely going to want to install is this one called
+'PHP Annotations'. Let's find that one in the search and install it as well. Perfect.
+
+We can close out of this window, and then press ok which will ask you to researt 
+PHPStorm which we definitely need to do.
+
+You only need to install the plugin once, but each time you start a new project you
+will need to enable the plugin. Back in preferences you'll search Symfony and clicking
+the 'Enable Plugin for this Project' checkbox. That's just one time per project - not bad!
+
+The checkbox had a note that it requires a restart, that's mostly not true. But I am going
+to restart one more time because there are a few small features that will not work unless
+you do this.
+
+Now we're really ready to go! I've already got my my site running on localhost:8000, we've
+got a nice looking 404 page since there isn't anything inside of here yet. 
+
+Just to prove that the Symfony Plugin is now installed and running, in the bottom right of
+PHPStorm you should see a little Symfony menu. 
 
