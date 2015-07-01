@@ -82,5 +82,8 @@ Now we're really ready to go! I've already got my my site running on localhost:8
 got a nice looking 404 page since there isn't anything inside of here yet. 
 
 Just to prove that the Symfony Plugin is now installed and running, in the bottom right of
-PHPStorm you should see a little Symfony menu. 
+PHPStorm you should see a little Symfony menu. Clicking it gives you a quick way to open up
+the profiler.
+
+Now that our editor is all setup let's get to the real work!
 
