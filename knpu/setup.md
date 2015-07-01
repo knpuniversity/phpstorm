@@ -18,6 +18,8 @@ you may have otherwise missed.
 If you've never used PHPStorm before it does have a free trial period
 that you can use to see if it's going to work for you.
 
+###UI Updates
+
 I'm working with a fresh version of PHPStorm, this is not how my
 development environment looks. So download your copy and we can get
 this into working order together.
@@ -40,5 +42,22 @@ the Darcula scheme. So first let's click 'save as' so we can customize this,
 save it as 'darcula mine'. And now I can change the font size to 14 and give it a
 line spacing of 1.2. Ahh so much better.
 
+###Project Organization
+
 Over here on the left, you can see the tuts and knpu directory. These are what I
-used to help me build this tutorial. 
+used to help me build this tutorial. So any time you have a directory that you
+don't want PHPStorm to look into, or you just don't want to see it in the tree
+you can hide it. Right click tuts, find 'mark director as' and select 'excluded'. 
+In a second that will hide this for me. Let's also do this on the knpu directory.
+
+And now we can change the view in the upper left from 'project' to 'project files'.
+Let's also exclude this .idea directory. If you ever need to see those in the tree
+again you can just switch back to 'project' and they'll reappear and even unmark
+them if you want to.
+
+###Symfony Plugin
+
+Okay back to the 'project files' view. So PHPStorm is the best editor I've ever seen.
+But the real power with Symfony comes from a plugin. Back in settings if you search
+for Symfony it brings you to a plugin spot.
+
