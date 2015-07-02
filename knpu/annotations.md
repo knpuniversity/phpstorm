@@ -36,16 +36,25 @@ find the template but that's fine because, there isn't one :)
 ## Annotation Options
 
 Annotations have a lot of options and one of them here is called `name`, which auto-completes
-for. Hey thanks. Fill that in with `movies_new`. If you're the curious sort and are wondering
-what other options you have, just hold the control key and hit the space bar: that will bring
-up all the options that you have in that spot. In fact, "control+space" can be used pretty
-much anywhere to show you your auto-complete option - really handy. It's `ctrl+space` for you
-Windows and Linux folks.
+for. Hey thanks. Fill that in with `movies_new`:
+
+[[[ code('') ]]]
+
+If you're the curious sort and are wondering what other options you have, just hold the control
+key and hit the space bar: that will bring up all the options that you have in that spot. In
+fact, "control+space" can be used pretty much anywhere to show you your auto-complete option -
+really handy. It's `ctrl+space` for you Windows and Linux folks.
 
 This autocomplete works for two reasons. First, an annotation represents a real class. Hold
 command, or control if you're in windows, and click `@Route` to open up the class that fuels
-it. If you hold command again and go into its base class, you'll see that all of those
-options are represented as properties inside of that class.
+it.
+
+[[[ code('') ]]]
+
+If you hold command again and go into its base class, you'll see that all of those
+options are represented as properties inside of that class:
+
+[[[ code('') ]]]
 
 To take this further if you go back to `MovieController` you can hold command and click on
 the `name` option and have it take you right to that property. You may not need this very
