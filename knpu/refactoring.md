@@ -19,5 +19,5 @@ it's really straight forward. The only interesting thing here is that you do get
 properties. Which really is pretty amazing. The reason that works is because PHPStorm knows that the movie repository
 returns movies so that cascades down into Twig.
 
-So as long as you have good PHPDoc that says
+So as long as you have good PHPDoc that says what types of 
 
