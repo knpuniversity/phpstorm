@@ -48,6 +48,10 @@ Let's update this line of code to be `form.$FIELD$`, click ok and now we can try
  different parts. `{{form_label(form.releasedAt)}}`, and copy that and update for form widget, and form errors. 
  Clearly this is also begging to be turned into a Live Template. 
  
- You know the drill! Select the full div, go to tools, Save as Live Template. 
-
-
+ You know the drill! Select the full div, go to tools, Save as Live Template. Let's name this one formrowfull,
+ and it Renders widget/label/errors. What's cool here is that these are duplicated, so we can just say `$FIELD$`
+ and repeat that variable three times. Just a quick indentation fix there and click ok. Awesome!
+ 
+ Let's get rid of the div we had, type formrowfull, hit the tab key, and as we start typing the property name
+ we get the autocomplete and it's filling instantly on each of the three lines. I'll fix the spacing here to
+ wrap it up!
