@@ -25,4 +25,34 @@ Why is that awesome you ask? Because I can search for what I need inside of here
 `single_text`, `text` and `choice`. So let's paste `single_text` back into our file.
 
 That trick of holding command and clicking an option name like the class behind the integer just command
-click and you're inside integer time! It's like being teleported but without any risk to your atoms. 
+click and you're inside integer type! It's like being teleported but without any risk to your atoms. 
+You can even use this to take you into the proprety inside of movie for that specific field. 
+
+Our form is setup so let's go ahead and create this inside of our controller, 
+`$form = $this->createForm(new MovieType(), $movie);`. Like always, we need to pass our form back into
+our template with `$form->createView()`. 
+
+Time to render this! Click into the new.html.twig template, ah that's right my form is actually
+going to be over here in _form.html.twig. It shouldn't surprise you that you'll get autocomplete
+here on things like form.row, but it might surprise you that you will get it on the individual fields of the form.
+This is going to help you remember that "Oh yea! We have a `{{form_start}}` and `{{form_end(form)}}`!" 
+
+Want more autocomplete awesomeness? Typing `{{form_row}}` and you'll get `form.title`inserted in there for you.
+So we'll plug in all of our fields here again and if I forget one of them I can hit control space to bring up
+all of my options. This will also show you some other methods that exist on that form object. Ah ok so we still
+have `rating` and `releasedAt` to add here. Clean up a bit of indentation here and perfect!
+
+Time to try this out, back to our new movies page, refresh and there we go! It renders with no problems other than
+the fact that this is a form only it's developer could love. And well maybe not even that, I'm going to fix that
+in config.yml, down in the Twig key add `form_themes`. Now this shoudl autocomplete, but for whatever reason this
+one key is not doing that, but for the most part you will see autocompletion inside of your configuration files.
+
+###Form Theming
+
+Right here let's plug in the bootstrap form theme, and the plugin isn't perfect because we don't get autocomplete
+on this either. But I do know that there is a file on this inside the project, so I'll go to find, file and start
+typing in bootstrap. We want the one called `bootstrap_3_layout.html.twig`. To cheat I'll just copy that file name 
+and paste that in there.
+
+Refresh with our new form theme and .... Awesome!
+
