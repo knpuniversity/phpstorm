@@ -1,9 +1,9 @@
 # Refactoring
 
-Ok back to work, let's finish up this `MovieController`. `Command+O`, `MovieController`, and now we've got that
-file open.
+Ok back to work, let's finish up this `MovieController`. `Command+O`, `MovieController`,
+and now we've got that file open.
 
-We need to save the POST'ed movice to the database. Start with getting our entity manager
+We need to save the POST'ed movie to the database. Start with getting our entity manager
 with `$em = $this->getDoctrine()->getManager();`. Then `$em->persist($movie);`, and
 `$em->flush();`:
 
@@ -101,7 +101,7 @@ really fast way to refactor things!
 
 Now that I have this here I'm realizing that `getEm()` is not that great of a name choice.
 So back to `command+t`, select rename from the menu and change it to `getEntityManager`
-to make my code a little clearer. When we do that I get a summar ydown here of all the
+to make my code a little clearer. When we do that I get a summary down here of all the
 spots in our project where PHPStorm sees `getEm()`. Click the "Do Refactor" button to
 rename this and all the other spots in the code that need updating. Sah-weet!
 
