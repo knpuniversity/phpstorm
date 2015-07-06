@@ -2,14 +2,14 @@
 
 Since we have this new movie form, we're going to want to save the data to the database. 
 To do this let's create a `Movie` entity. I'm not going to generate it, let's just do this
-by creating a good ole fashioned PHP Class called `Movie. But when I do this, notice the
+by creating a good ole fashioned PHP Class called `Movie`. But when I do this, notice the
 namespace box is empty. I could type `AppBundle\Entity` here, but I'm trying to do as
 little work as possible people!
 
 Let's make the robots do this for you. Go into preferences, search for 'directories' and
 here you can see the three directories that we excluded earlier. Click on `src` and click
-the blue sources route button above. Now we can see this on the right and clicking the little
-'p' allows us to edit the properities. So, if we were using PSR-4 inside of this directory
+the blue sources button above. Now we can see this on the right and clicking the little
+'p' allows us to edit the properties. So, if we were using PSR-4 inside of this directory
 we could actually put our namespace prefix in this box - like `KnpU`. But all we needed to
 do was mark it as a source route, so we're done!
 
@@ -48,7 +48,7 @@ Finish with 'TODO'. Now let's add a route above this, `@Route("/movies", name="m
 
 Oh and now that we have this second endpoint, back in `new.html.twig`, if we want to create a
 link to this page, we can. And we can use another live template. Type `a`, hit tab, and use
-`{{ path() }}` and - amazingly - we event get auto-complete on the route name. For the link text,
+`{{ path() }}` and - amazingly - we even get auto-complete on the route name. For the link text,
 say "back to list'. 
 
 Refresh that, and there's our link right back to our list. Awesome!
