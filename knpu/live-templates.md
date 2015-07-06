@@ -23,13 +23,13 @@ of our project. There must be a better way! To fix that we are going to use some
 `a` tag printed out. We want to do the same type of thing and have it generate all this form
 handling boiler plate code for us. 
 
-To make this, first select all the code that you want included. Then click on the tools dropdown menu,
+To make this, first select all the code that you want included. Then click on the Tools dropdown menu,
 and select "Save as Live Template". Let's give this a name, like `formhandle` with a description of
 "Adds controller form handling code". Inside the template text tweak the indentation but other
 than that, let's just leave this alone for now. Hit 'ok'.
 
-Now that we have this, we can delete our hard word. Replace it by typing `formhandle`.
-hitting tab, and then enjoying our handy autocompletion. There it is!
+Now that we have this, we can delete our hard work. Replace it by typing `formhandle`,
+hitting tab, and then... boom! Enjoy that autocompletion.
  
 Of course now we need to make parts of this dynamic. We'll need to edit our live template...how
 do we do that? Well, it's probably in the preferences menu and if we search for it, it is!
@@ -45,7 +45,7 @@ tab, type `movie_list` for our redirect, then tab one more time. Now that is awe
 much faster than typing it all out again and again and again.
 
 Another great spot to use Live Templates is inside of this form row stuff since we'll be typing
-this all the time. Copy one of our rows, go to tools and "Save as Live Template". We'll call this
+this all the time. Copy one of our rows, go to Tools and "Save as Live Template". We'll call this
 one `formrow` with a description of "Renders form_row in Twig". Below, there's a note saying
 its applicable for HTML, HTML text and HTML Twig files - so that's right. Let's update this line
 of code to be `form.$FIELD$`. Click ok and now we can try this out.
@@ -60,7 +60,7 @@ and `form_errors`:
 
 Clearly this is also begging to be turned into a Live Template. 
  
-You know the drill! Select the full div, go to tools, Save as Live Template. Let's name this
+You know the drill! Select the full div, go to Tools, Save as Live Template. Let's name this
 one `formrowfull`, and it "Renders widget/label/errors". What's cool here is that there's
 just one variable that's duplicated 3 times. So we can just say `$FIELD$` and repeat that
 each time. Just a quick indentation fix there and click ok. Awesome!
@@ -68,3 +68,5 @@ each time. Just a quick indentation fix there and click ok. Awesome!
 Let's get rid of the div we had, type `formrowfull`, hit the tab key, and as we start typing
 the property name we get the autocomplete and it's filling instantly on each of the three lines.
 I'll fix the spacing here to wrap it up!
+
+So, live templates: big win.
