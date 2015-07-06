@@ -4,7 +4,7 @@ The Symfony Plugin has all kinds of awesome setup for Twig integration.
 So let's render a template here, `movies/new.html.twig`. PHPStorm highlights
 this immediately because it's missing its template, how thoughtful!
 
-Let's make that template, in `app/resources/views` we'll create a directory
+Let's make that template, in `app/Resources/views` we'll create a directory
 called `movie` and a file called `new.html.twig`. Like always, start by extending
 the base template, but notice we get autocomplete on that `extends` tag which is
 *fantastic*! And we even get autocomplete on the template name. Down here, we
@@ -35,7 +35,7 @@ too much!
 
 I could just go to my tree and double click `new.html.twig` to open it again, but instead 
 I'm going to hold command and click the name in the controller to get us there. In the
-template we'lluse the normal ``{{ }}`` inside a p tag, but watch this: we get autocomplete
+template we'll use the normal ``{{ }}`` inside a p tag, but watch this: we get autocomplete
 on our quote variable. That is huge!
 
 [[[ code('') ]]]
