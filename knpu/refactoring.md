@@ -53,7 +53,32 @@ This shortcut is going to be useful in more than just this controller, so this i
 create a baseController for my whole project. Click the `Controller` directory at the top of your IDE, 
 and from there press `command+n`, select Controller from the menu and name is `BaseController`.
 
-To start, remove that public function
+To start, remove that public function and add `abstract`. This is now the spot for our own shortcuts.
+In `MovieController` update it to extend `BaseController`. This use statement is showing up in a darker
+gray to indicate that it isn't being used any more and the same for the response use statement so delete
+both of those.
+
+With the `BaseController` in action, let's refactor `getEm` into the `BaseController`. Select the method,
+one cool way to do that is hit `option+up` which will select larger and larger contexts. Now hit `control+t`.
+Select Pull Members Up from the menu, which will pull them up to the top class. It already recognizes that
+`BaseController` is the top class, and at the bottom it's warning us that the access will be changed from
+private to protected which is awesome! Hit refactor and we can see it's gone from this file, because now
+it lives inside of `BaseController`. That there is a really fast way to refactor things!
+
+Now that I have this here I'm realizing that `Em` is not that great of a name choice. So back to `command+t`,
+select rename from the menu and change it to `getEntityManager` to make my code a little clearer. When we do
+that I get a summar down here of all the spots in our project where PHPStorm sees `getEm`. Click the Do Refactor
+button and we can see that it changed the name all over our project. Sah-weet!
+
+There are a lot of other things you can do with the refactor feature in PHPStorm. For example, we can extract
+this out to a variable. This could add a level of clarity to what things are.
+
+Say you get into a spot where you messed up your formatting in some terrible way. Oof that looks just awful.
+Make it stop! At any point you can go up to the code menu at the top and select reformat code, which is also
+`command+option+L` and it will tidy that back up for you.
+
+So let's hit `command+A` to select all the code I want to reformat, then `command+option+L` and now everything
+is back into place based on our coding standards, which you can of course control. 
 
 
 
