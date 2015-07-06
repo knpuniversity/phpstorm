@@ -5,7 +5,7 @@ feel like typing all of that.
 
 Let me introduce you to another really important shortcut: generate. You can get to
 it with `command n`. Or just click the code menu at the top, and select generate. Either way
-in this class,go down to 'Generate ORM Class': and just like *all* menus in PhpStorm,
+in this class, go down to 'Generate ORM Class': and just like *all* menus in PhpStorm,
 you can just start typing to search for it.
 
 Sweet - this automatically added all the `Entity` annotation stuff on top for us.
@@ -19,7 +19,7 @@ and instead stay  `as ORM;`:
 
 [[[ code('') ]]]
 
-That's the standard `use` statment that you see at the top of all Doctrine entities.
+That's the standard `use` statement that you see at the top of all Doctrine entities.
 
 Let's get rid of these lines here, then get back inside of the class because context is
 important with command n. Hit command n and search for 'ORM' and select Generate ORM Class:
