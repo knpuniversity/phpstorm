@@ -12,7 +12,7 @@ use `$key = array_rand($quotes);` to get one of those quotes and return it.
 ## Registering a Service
 
 Next, I want to register this as a service and use it inside of my controller. So hit
-`shift+command+O`, search forr `services.yml`, delete the comments under the
+`shift+command+O`, search for `services.yml`, delete the comments under the
 services key, and put our service name there instead. I'll give it a nickname of `quote_generator`.
 
 Notice that PHPStorm is autocompleting my tabs wrong, I want to hit tab and have it give me four spaces. 
@@ -31,7 +31,7 @@ Now add an empty `arguments` line: we don't have any of those yet. This is now r
 to be used in `MovieController`.
 
 Use `command+shift+]` to move over to that tab. And here instead of this quote,
-we'll say `$this ->get('')` and the plugin is already smart enough to know that
+we'll say `$this->get('')` and the plugin is already smart enough to know that
 the `quote_generator` service is there. And it even knows that there is a method
 on it called `getRandomQuote()`. This is one my *favorite* features of the Symfony
 plugin.
@@ -43,7 +43,8 @@ of the page.
 
 Now in `QuoteGenerator`, let's pretend like we need access to some service - like maybe we
 want to log something inside of here. The normal way of doing that is with dependency
-injectio, where we pass the logger through via the `constructor`. So let's do exactly that.
+injection, where we pass the logger through via the `constructor`. So let's do exactly that,
+but with as little work as possible.
 
 I could type `public function __construct`, but instead I'm going to use the generate
 command. Hit `command+n` and pick the "Constructor" option from the menu here. I don't
@@ -56,7 +57,7 @@ Ok, let's try adding the constructor again. Much cleaner.
 
 ## Generating Constructor Properties
 
-At this point we need the logger, so addthe argument `LoggerInterface $logger`.
+At this point we need the logger, so add the argument `LoggerInterface $logger`.
 This is the point where we would normally create the `private $logger` property above, and set it
 down in the constructor with `$this->logger = $logger;`. This is a really common task, so if we
 can find a faster way to do this that would be awesome. 
