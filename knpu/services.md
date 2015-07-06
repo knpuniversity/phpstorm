@@ -52,6 +52,14 @@ Time to go back to the actions shortcut, `option+enter`, select Initialize field
 that code for you. We don't even have to feed it!
 
 Farther down here it's really easy to use, `$this->$logger->info('Selected quote: '.$quote);`. We've added the argument
-here, so now we need to go to `services.yml`, which I'll move over to, and notice it's highlighting `quote_generator`. 
+here, so now we need to go to `services.yml`, which I'll move over to, and notice it's highlighting `quote_generator` 
+with a missing argument message because it knows that this service has an argument, so we can say `@logger`, or even
+`command+O` and then just autocomplete that. 
 
+Head back, refresh, it still works and I can go down here to click into my profiler to see if that actually worked,
+or, we can go over here, click on our Symfony menu and it always has a shortcut to get into the Profiler. Click that,
+go to logs, and there is our quote right there. 
+
+The autocompletion of the services and the ability to generate your properties is probably one of the most important
+features that you need to get good at with PHPStorm because it will help you fly when you develop in Symfony.
 
