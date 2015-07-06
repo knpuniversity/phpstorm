@@ -44,7 +44,7 @@ I am calling when I say `$this->createForm()` from inside `MovieController`.
 
 ## Clicking into Functions
 
-In this case, if I wanted to know exactly where this `createForm()` function livesd,
+In this case, if I wanted to know exactly where this `createForm()` function lives,
 I would just hold command and click into it -- so don't forget about that shortcut as well.
 We can do the same thing here for `handleRequest` if we needed to know where that is.
 Clicking that will take us right into this core Symfony spot and again we can look around
