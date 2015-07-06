@@ -62,7 +62,7 @@ have `rating` and `releasedAt` to add here. Clean up a bit of indentation here a
 
 Time to try this out: back to our new movies page, refresh and there we go! It renders with no problems other than
 the fact that this is a form only it's developer could love. And well, maybe not even that: I'm going to
-make it prettier in `config.yml`. Down in the `twig` key add `form_themes`. Now this should autocomplete,
+make it prettier. In `config.yml`, down in the `twig` key add `form_themes`. Now this should autocomplete,
 but for whatever reason this one key is not doing that. But for the most part, you will see
 autocompletion inside of your configuration files.
 
