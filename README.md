@@ -1,18 +1,10 @@
-<<<<<<< HEAD
-phpstorm
-========
+# Lean and Mean Dev with PhpStorm (for Symfony) 
 
-A Symfony project created on June 30, 2015, 10:40 am.
-=======
-## Color Scheme For PHPStorm
+Hiya!
 
-Hiya! This is the color scheme that we use in PHPStorm for the
-KnpUniversity.com screencasts.
+This is the code, script and other Tom-foolery for the tutorial that you can
+find here:
 
-For installation instructions, I'll refer you to another theme,
-which has great details: https://github.com/cordoval/Symfony2Colors
+http://knpuniversity.com/screencast/phpstorm
 
-![Screenshot](https://raw.githubusercontent.com/knpuniversity/phpstorm/master/screenshot.png)
-
-Enjoy!
->>>>>>> origin/master
+Cheers!
