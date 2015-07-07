@@ -1,7 +1,7 @@
 title:  Lean and Mean Dev with PhpStorm (for Symfony) 
 summary: |
     Have you ever written out a long `use` statement by hand
-    or navigated deep directories to find a file? Then you're
+    or navigated deep directories to find a file? Then your
     development is about to get *a lot* faster.
     
     PhpStorm makes modern Php development a joy - *especially*
