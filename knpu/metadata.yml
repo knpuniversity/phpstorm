@@ -1,14 +1,29 @@
-title:  PHPStorm
-summary: Summary of PHPStorm tutorial goes here
+title:  Lean and Mean Dev with PhpStorm (for Symfony) 
+summary: |
+    Have you ever written out a long `use` statement by hand
+    or navigated deep directories to find a file? Then you're
+    development is about to get *a lot* faster.
     
-
+    PhpStorm makes modern Php development a joy - *especially*
+    for Symfony2 users. In this tutorial, we'll use PhpStorm
+    to take a lot of the grunt work out of your coding and help
+    you get things done faster:
+    
+    * Get the life-changing Symfony plugin
+    * Auto-complete namespaces (please stop typing them)!
+    * Tricks for annotations, Doctrine, forms, Twig and more
+    * Refactoring
+    * Live Templates
+    * Fast navigation
+    * Symfony service integration
+    * .... (and always) well-intentioned jokes.
 
 illustration: phpstorm.png
 hasVideoDownload: 0
 
 tuts_hero:
     start_step: start
-    finish_step: 
+    finish_step: ~
 
 chapters:
     setup:
