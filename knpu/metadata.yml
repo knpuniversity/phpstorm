@@ -12,7 +12,8 @@ tuts_hero:
 
 chapters:
     setup:
-        is_finished: false
+        is_free:    true
+        video_key:  kkiho29o41
     annotations:
         is_finished: false
     twig:
