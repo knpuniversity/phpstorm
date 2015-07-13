@@ -32,19 +32,19 @@ chapters:
     annotations:
         is_free:    true
         video_key:  3mdkmurg3o
-    twig:
-        is_finished: false
-    namespaces:
-        is_finished: false
-    doctrine:
-        is_finished: false
-    forms:
-        is_finished: false
-    live-templates:
-        is_finished: false
-    fast-navigating:
-        is_finished: false
-    refactoring:
-        is_finished: false
-    services:
-        is_finished: false
+    # twig:
+    #     is_finished: false
+    # namespaces:
+    #     is_finished: false
+    # doctrine:
+    #     is_finished: false
+    # forms:
+    #     is_finished: false
+    # live-templates:
+    #     is_finished: false
+    # fast-navigating:
+    #     is_finished: false
+    # refactoring:
+    #     is_finished: false
+    # services:
+    #     is_finished: false
