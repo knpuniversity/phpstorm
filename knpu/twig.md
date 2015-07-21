@@ -84,7 +84,7 @@ template name. Don't worry about the "movie" part of the name, just start typing
 `_form.html.twig` and you're all set. And there are two formats here: both valid,
 but I like the first one, it's cleaner.
 
-[[[ code('a28036e2c8') ]]
+[[[ code('a28036e2c8') ]]]
 
 Go back and refresh, beautiful! Everything looks awesome, except I guess my button
 is ugly. So I'll throw in some twitter bootstrap classes to make this a bit prettier. 
