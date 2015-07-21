@@ -32,8 +32,9 @@ chapters:
     annotations:
         is_free:    true
         video_key:  3mdkmurg3o
-    # twig:
-    #     is_finished: false
+    twig:
+        is_free:    true
+        video_key:  8mowzahj0s
     # namespaces:
     #     is_finished: false
     # doctrine:
