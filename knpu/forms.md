@@ -32,7 +32,7 @@ a `widget` option, except I don't remember what value to set that to. No worries
 the command key over the `widget` option and it will take me straight to where that is setup inside
 of the core code. 
 
-Why is that awesome you ask? Because I can search for what I need inside of here and boom `setAllowableValues`
+Why is that awesome you ask? Because I can search for what I need inside of here and boom `setAllowedValues`
 `single_text`, `text` and `choice`. So let's paste `single_text` back into our file.
 
 [[[ code('') ]]]

@@ -50,7 +50,7 @@ line spacing of say 1.2. Ahh so much better.
 ## Project Organization
 
 Over here on the left, you can see the `tuts` and `knpu` directories. I use
-these to help me build this tutorial - but I when I'm coding, I don't want
+these to help me build this tutorial - but when I'm coding, I don't want
 to see them. Any time you have a directory that you don't want PHPStorm to look
 into, or that you just don't want to see, you can hide it. Right click `tuts`,
 find 'mark directory as' and select 'excluded'. In a second that will hide this
