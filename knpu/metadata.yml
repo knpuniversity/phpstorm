@@ -35,8 +35,9 @@ chapters:
     twig:
         is_free:    true
         video_key:  8mowzahj0s
-    # namespaces:
-    #     is_finished: false
+    namespaces:
+        is_free:    true
+        video_key:  8fz43ov6o5
     # doctrine:
     #     is_finished: false
     # forms:
