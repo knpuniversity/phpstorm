@@ -38,8 +38,9 @@ chapters:
     namespaces:
         is_free:    true
         video_key:  8fz43ov6o5
-    # doctrine:
-    #     is_finished: false
+     doctrine:
+        is_free:    true
+        video_key:  cipswjcd2f
     # forms:
     #     is_finished: false
     # live-templates:
