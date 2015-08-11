@@ -41,8 +41,9 @@ chapters:
     doctrine:
         is_free:    true
         video_key:  cipswjcd2f
-    # forms:
-    #     is_finished: false
+    forms:
+        is_free:    true
+        video_key:  5zt0ftisli
     # live-templates:
     #     is_finished: false
     # fast-navigating:
