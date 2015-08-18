@@ -44,8 +44,9 @@ chapters:
     forms:
         is_free:    true
         video_key:  5zt0ftisli
-    # live-templates:
-    #     is_finished: false
+    live-templates:
+        is_free:    true
+        video_key:  z0pttc7ag4
     # fast-navigating:
     #     is_finished: false
     # refactoring:
