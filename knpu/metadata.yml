@@ -47,8 +47,9 @@ chapters:
     live-templates:
         is_free:    true
         video_key:  z0pttc7ag4
-    # fast-navigating:
-    #     is_finished: false
+    fast-navigating:
+        is_free:    true
+        video_key:  zq4lhqlwc4
     # refactoring:
     #     is_finished: false
     # services:
