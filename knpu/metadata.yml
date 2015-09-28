@@ -28,31 +28,31 @@ tuts_hero:
 chapters:
     setup:
         is_free:    true
-        video_key:  kkiho29o41
+        video_key:  140094425
     annotations:
         is_free:    true
-        video_key:  3mdkmurg3o
+        video_key:  140094423
     twig:
         is_free:    true
-        video_key:  8mowzahj0s
+        video_key:  140094424
     namespaces:
         is_free:    true
-        video_key:  8fz43ov6o5
+        video_key:  140094426
     doctrine:
         is_free:    true
-        video_key:  cipswjcd2f
+        video_key:  140094417
     forms:
         is_free:    true
-        video_key:  5zt0ftisli
+        video_key:  140094422
     live-templates:
         is_free:    true
-        video_key:  z0pttc7ag4
+        video_key:  140094419
     fast-navigating:
         is_free:    true
-        video_key:  zq4lhqlwc4
+        video_key:  140094421
     refactoring:
         is_free:    true
-        video_key:  syy3yb1mmm
+        video_key:  140094418
     service-shortcuts:
         is_free:    true
-        video_key:  7d6pmy4hwh
+        video_key:  140094420
