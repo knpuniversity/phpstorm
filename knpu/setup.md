@@ -17,6 +17,11 @@ you may have missed otherwise.
 If you've never used PHPStorm before it does have a free trial period
 that you can use to see if it's going to work for you.
 
+***SEEALSO
+For even *deeper* information about PhpStorm settings and shortcuts, you
+can also check out [Beginner's Guide to PhpStorm - Tips & Tricks](http://www.ifdattic.com/beginners-guide-to-phpstorm-tips-tricks/).
+***
+
 ## UI Updates
 
 I'm working with a fresh version of PHPStorm, this is not how I want
