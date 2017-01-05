@@ -15,7 +15,7 @@ index f4c0b1b..0a18c96 100644
 -</form>
 +{{ form_end(form) }}
 diff --git a/src/AppBundle/Controller/MovieController.php b/src/AppBundle/Controller/MovieController.php
-index b37956b..7384a77 100644
+index b37956b..378a076 100644
 --- a/src/AppBundle/Controller/MovieController.php
 +++ b/src/AppBundle/Controller/MovieController.php
 @@ -3,6 +3,7 @@
@@ -30,7 +30,7 @@ index b37956b..7384a77 100644
      {
          $movie = new Movie();
  
-+        $form = $this->createForm(new MovieType(), $movie);
++        $form = $this->createForm(MovieType::class, $movie);
 +
          return $this->render('movie/new.html.twig', array(
 -            'quote' => 'If my answers frighten you then you should cease asking scary questions. (Pulp Fiction)'

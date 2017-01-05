@@ -1,9 +1,9 @@
 diff --git a/src/AppBundle/Form/MovieType.php b/src/AppBundle/Form/MovieType.php
 new file mode 100644
-index 0000000..e74fd6e
+index 0000000..2aa75d8
 --- /dev/null
 +++ b/src/AppBundle/Form/MovieType.php
-@@ -0,0 +1,25 @@
+@@ -0,0 +1,20 @@
 +<?php
 +
 +namespace AppBundle\Form;
@@ -22,10 +22,5 @@ index 0000000..e74fd6e
 +    public function configureOptions(OptionsResolver $resolver)
 +    {
 +
-+    }
-+
-+    public function getName()
-+    {
-+        return 'app_bundle_movie_type';
 +    }
 +}

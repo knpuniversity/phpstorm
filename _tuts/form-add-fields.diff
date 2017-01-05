@@ -1,19 +1,30 @@
 diff --git a/src/AppBundle/Form/MovieType.php b/src/AppBundle/Form/MovieType.php
-index cf6761d..b6d12b7 100644
+index 72b294a..21fc646 100644
 --- a/src/AppBundle/Form/MovieType.php
 +++ b/src/AppBundle/Form/MovieType.php
-@@ -10,7 +10,15 @@ class MovieType extends AbstractType
+@@ -3,6 +3,10 @@
+ namespace AppBundle\Form;
+ 
+ use Symfony\Component\Form\AbstractType;
++use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
++use Symfony\Component\Form\Extension\Core\Type\DateType;
++use Symfony\Component\Form\Extension\Core\Type\IntegerType;
++use Symfony\Component\Form\Extension\Core\Type\TextType;
+ use Symfony\Component\Form\FormBuilderInterface;
+ use Symfony\Component\OptionsResolver\OptionsResolver;
+ 
+@@ -10,7 +14,15 @@ class MovieType extends AbstractType
  {
      public function buildForm(FormBuilderInterface $builder, array $options)
      {
 -
-+        $builder->add('title', 'text')
-+            ->add('samsCharacterName', 'text')
-+            ->add('isMainCharacter', 'checkbox', array(
++        $builder->add('title', TextType::class)
++            ->add('samsCharacterName', TextType::class)
++            ->add('isMainCharacter', CheckboxType::class, array(
 +                'required' => false,
 +            ))
-+            ->add('rating', 'integer')
-+            ->add('releasedAt', 'date', array(
++            ->add('rating', IntegerType::class)
++            ->add('releasedAt', DateType::class, array(
 +                'widget' => 'single_text'
 +            ));
      }

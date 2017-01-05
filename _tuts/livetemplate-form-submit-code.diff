@@ -1,5 +1,5 @@
 diff --git a/src/AppBundle/Controller/MovieController.php b/src/AppBundle/Controller/MovieController.php
-index 7384a77..fedc726 100644
+index 378a076..43e82be 100644
 --- a/src/AppBundle/Controller/MovieController.php
 +++ b/src/AppBundle/Controller/MovieController.php
 @@ -7,18 +7,28 @@ use AppBundle\Form\MovieType;
@@ -18,7 +18,7 @@ index 7384a77..fedc726 100644
      {
          $movie = new Movie();
  
-         $form = $this->createForm(new MovieType(), $movie);
+         $form = $this->createForm(MovieType::class, $movie);
  
 +        $form->handleRequest($request);
 +        if ($form->isValid()) {

@@ -26,7 +26,7 @@ index 0000000..ca75326
 +{% endblock %}
 \ No newline at end of file
 diff --git a/src/AppBundle/Controller/MovieController.php b/src/AppBundle/Controller/MovieController.php
-index bdfb780..3141990 100644
+index d7cdc20..d9d482c 100644
 --- a/src/AppBundle/Controller/MovieController.php
 +++ b/src/AppBundle/Controller/MovieController.php
 @@ -22,6 +22,9 @@ class MovieController extends Controller

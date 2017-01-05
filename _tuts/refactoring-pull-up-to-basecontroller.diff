@@ -18,7 +18,7 @@ index 821d4c2..56484a4 100644
  }
 \ No newline at end of file
 diff --git a/src/AppBundle/Controller/MovieController.php b/src/AppBundle/Controller/MovieController.php
-index 3938dc4..b75d69a 100644
+index 4b880e2..32c3b81 100644
 --- a/src/AppBundle/Controller/MovieController.php
 +++ b/src/AppBundle/Controller/MovieController.php
 @@ -50,13 +50,4 @@ class MovieController extends BaseController

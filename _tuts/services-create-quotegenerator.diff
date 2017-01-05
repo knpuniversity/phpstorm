@@ -13,7 +13,7 @@ index 5c76fc5..e8bc019 100644
 +        class: AppBundle\Service\QuoteGenerator
 +        arguments: []
 diff --git a/src/AppBundle/Controller/MovieController.php b/src/AppBundle/Controller/MovieController.php
-index c29934c..b629106 100644
+index 20ea429..fb439fc 100644
 --- a/src/AppBundle/Controller/MovieController.php
 +++ b/src/AppBundle/Controller/MovieController.php
 @@ -32,7 +32,7 @@ class MovieController extends BaseController
