@@ -1,5 +1,10 @@
 # Forms
 
+***TIP
+This screencast shows the *old*, 2.7 and earlier form syntax. But, the code blocks
+below have been updated to show the new syntax!
+***
+
 Now that we've got our entity let's create a form! Click on AppBundle, press our handy
 shortcut `command+n`, and if you search form you'll find that option in the menu!
 It's all coming together!
