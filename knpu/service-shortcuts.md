@@ -18,11 +18,17 @@ and return it:
 ## Registering a Service
 
 Next, I want to register this as a service and use it inside of my controller. So hit
-`shift+command+O`, search for `services.yml`, delete the comments under the
+`Shift`+`Command`+`O`, search for `services.yml`, delete the comments under the
 services key, and put our service name there instead. I'll give it a nickname of
 `quote_generator`:
 
 [[[ code('99b9186c2e') ]]]
+
+***TIP
+If you're using Symfony 3.3, your `app/config/services.yml` contains some extra code
+that may break things when following this tutorial! To keep things working - and learn
+about what this code does - see https://knpuniversity.com/symfony-3.3-changes
+***
 
 Notice that PHPStorm is autocompleting my tabs wrong, I want to hit tab and have it
 give me four spaces. So let's fix that real quick in preferences by first hitting
@@ -31,7 +37,7 @@ and update the indent from 2 to 4. Click apply, then ok and that should do it!
 
 Yep, that looks perfect. As I was saying: we'll call the service, `quote_generator`,
 but this name really doesn't matter. And of course we need the `class` key, and we
-have autocomplete here too. If you hit `control+space` you'll get a list of all the
+have autocomplete here too. If you hit `Control`+`Space` you'll get a list of all the
 different keys you can use to determine how a service is created, which is pretty
 incredible.
 
@@ -43,7 +49,7 @@ Now add an empty `arguments` line: we don't have any of those yet:
 
 This is now ready to be used in `MovieController`.
 
-Use `command+shift+]` to move over to that tab. And here instead of this quote,
+Use `Command`+`Shift`+`]` to move over to that tab. And here instead of this quote,
 we'll say `$this->get('')` and the plugin is already smart enough to know that
 the `quote_generator` service is there. And it even knows that there is a method
 on it called `getRandomQuote()`:
@@ -63,9 +69,9 @@ dependency injection, where we pass the logger through via the `constructor`. So
 do exactly that, but with as little work as possible.
 
 I could type `public function __construct`, but instead I'm going to use the generate
-command. Hit `command+n` and pick the "Constructor" option from the menu here. I don't
+command. Hit `Command`+`N` and pick the "Constructor" option from the menu here. I don't
 think this constructor comment is all that helpful, so go back into preferences with
-`command+,`, search for "templates", and under "file and code templates", we have
+`Command`+`,`, search for "templates", and under "file and code templates", we have
 one called "PHP Constructors". I'll just go in here and delete the comment from the
 template.
 
@@ -83,7 +89,7 @@ This is the point where we would normally create the `private $logger` property 
 and set it down in the constructor with `$this->logger = $logger;`. This is a really
 common task, so if we can find a faster way to do this that would be awesome. 
 
-Time to go back to the actions shortcut, `option+enter`, select "Initialize fields", then
+Time to go back to the actions shortcut, `Option`+`Enter`, select "Initialize fields", then
 choose `logger`, and *it* adds all that code for you:
 
 [[[ code('2e96111923') ]]]
@@ -97,7 +103,7 @@ Farther down, it's really easy to use, `$this->logger->info('Selected quote: '.$
 We've added the argument here, so now we need to go to `services.yml`, which I'll
 move over to. And notice it's highlighting `quote_generator` with a missing argument
 message because it knows that this service has one argument. So we can say `@logger`,
-or even `command+O` and then use autocomplete to help us:
+or even `Command`+`O` and then use autocomplete to help us:
 
 [[[ code('2b66876735') ]]]
 
