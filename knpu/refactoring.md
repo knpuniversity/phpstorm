@@ -104,6 +104,12 @@ Delete both of those:
 
 [[[ code('71e97bcc49') ]]]
 
+***TIP
+Or you can go "Code" -> "Optimize Imports" instead (`Control` + `Alt` + `O` on a Mac)
+to remove unused imports, add missing imports, and	organize import statements in
+the current file.
+***
+
 With the `BaseController` in action, let's refactor `getEm()` into the `BaseController`.
 Select the method, one cool way to do that is hit `option+up` which will select larger
 and larger contexts. Now hit `control+t`. Select "Pull Members Up" from the menu,
