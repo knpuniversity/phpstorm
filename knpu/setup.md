@@ -40,8 +40,8 @@ for 1,000+ hours a year is very similar to just staring at a lightbulb -- not
 so great on the eyes.
 
 Speaking of eyes, I'd like to see my font size a bit bigger here. Back to
-preferences, on a mac its shortcut is `⌘,` so I'll start using that. On
-Windows and Linux, it's the longer `Ctrl+Alt+S` - you can check out the key 
+preferences, on a mac its shortcut is `⌘`, so I'll start using that. On
+Windows and Linux, it's the longer `Ctrl`+`Alt`+`S` - you can check out the key 
 mappings under the keymap section, to see and simplify these.
 
 Use this search to look for font. This pulls up a few things, general appearance, 
