@@ -74,7 +74,7 @@ you search for Symfony it brings you to a plugin spot. Click 'Browse Repositorie
 here you see the community plugins for Symfony and there's one called the 'Symfony2 Plugin'.
 
 ***TIP
-The "Symfony2 Plugin" was renamed to *Symfony Support* - install this instead
+The "Symfony2 Plugin" was renamed to "Symfony Support" - install this instead
 ***
 
 To prove how great it is just look at its 1.2 million downloads. So press the 'Install Plugin'
