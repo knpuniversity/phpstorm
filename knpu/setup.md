@@ -71,9 +71,14 @@ unmark them if you want to.
 Okay back to the 'project files' view. So PHPStorm is the best editor I've ever seen.
 But the real power with Symfony comes from an *amazing* plugin. Back in preferences if
 you search for Symfony it brings you to a plugin spot. Click 'Browse Repositories',
-here you see the community plugins for Symfony and there's one called the 'Symfony
-2 Plugin'. To prove how great it is just look at its 1.2 million downloads. So press
-the 'Install Plugin' button to get this added to our IDE. 
+here you see the community plugins for Symfony and there's one called the 'Symfony2 Plugin'.
+
+***TIP
+The "Symfony2 Plugin" was renamed to *Symfony Support* - install this instead
+***
+
+To prove how great it is just look at its 1.2 million downloads. So press the 'Install Plugin'
+button to get this added to our IDE. 
 
 The other plugin that you are definitely going to want to install is this called
 'PHP Annotations'. Find that one in the search and install it. Perfect.
