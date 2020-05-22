@@ -94,7 +94,17 @@ to restart one more time because there are a few small features that will not wo
 you do this.
 
 Now we're really ready to go! I've already got my my site running on localhost:8000 and
-we've got a nice looking 404 page since there isn't anything inside of here yet. 
+we've got a nice looking 404 page since there isn't anything inside of here yet.
+
+***TIP
+To run the website, execute in your terminal:
+
+```terminal-silent
+php app/console server:run
+```
+
+And open the homepage at http://localhost:8000/
+***
 
 Just to prove that the Symfony Plugin is installed and running, in the bottom right of
 PHPStorm you should see a little Symfony menu. Clicking it gives you a quick way to
