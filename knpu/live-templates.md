@@ -44,7 +44,7 @@ Of course now we need to make parts of this dynamic. We'll need to edit our live
 template...how do we do that? Well, it's probably in the preferences menu and if
 we search for it, it is!
 
-We'll assume that the variable is always called `$form` because it ususally is, but
+We'll assume that the variable is always called `$form` because it usually is, but
 we do want to change our success message here. Let's swap it out for `'$SUCCESSMESSAGE$'`
 with dollar signs on both sides and surrounded in quotes.  Let's do the same thing
 down here in the redirect, we'll change that to `'$ROUTENAME$'`. In the event that
