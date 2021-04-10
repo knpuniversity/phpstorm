@@ -3,6 +3,11 @@
 We've got a big project today, a site about movies. But only movies that 
 have Samuel L. Jackson.
 
+***TIP
+The "Controller" option when you create a new file is no longer available. However,
+you can use `php bin/console make:controller` from MakerBundle as an even nicer option.
+***
+
 We'll start by creating a `MovieController`. We could right click on the
 `Controller` directory, go to new, and select file from the menu. But we can
 be faster! For mac users use `⌘+n` to get the "new" menu open. And because
