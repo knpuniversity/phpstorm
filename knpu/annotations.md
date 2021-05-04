@@ -10,7 +10,7 @@ you can use `php bin/console make:controller` from MakerBundle as an even nicer 
 
 We'll start by creating a `MovieController`. We could right click on the
 `Controller` directory, go to new, and select file from the menu. But we can
-be faster! For mac users use `⌘+n` to get the "new" menu open. And because
+be faster! For Mac users, use `⌘`+`N` to get the "new" menu open. And because
 we have the Symfony Plugin, by typing 'controller' you'll find an option to create 
 one directly. Let's keep things simple and obvious and call it `MovieController`.
 
